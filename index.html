@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>React</title>
+  </head>
+  <body>
+    <div id="root">
+      <!-- <div id="container">
+        <h1>Heading1</h1>
+        <h2>Heading2</h2>
+      </div> -->
+    </div>
+    
+    </div>
+  
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
+    <script>
+  const heading1 = React.createElement('h1',{
+    id:'title1',style:{color : "cornflowerblue", fontSize: '3rem'}
+  },"You are my heading1, the one that catches my eye!");
+ const showHeading2 = true;
+
+ const heading2Style = {
+  color : showHeading2 ? "red" : "green",
+  fontSize: showHeading2 ? "2.5rem" : "2rem"
+ };
+
+  const heading2 = React.createElement('h2',{
+    id:'title2' , //style : {color :"crimson", fontSize : "2.5rem"}
+    style: heading2Style
+  },"hey there heading2! You make my heart race");
+
+  
+  const container = React.createElement('div',{
+    id:'container'
+  },[heading1, heading2]);  
+
+  const root = ReactDOM.createRoot(document.getElementById("root"));
+      root.render(container);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,104 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>React</title>
+  </head>
+  <body>
+    <div id="root">
+       <div id="container">
+        <h1>Heading1</h1>
+        <h2>Heading2</h2>
+      </div>
+    </div>
+    
+    </div>
+  
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
+    <script>
+    const heading1 = React.createElement("h1", {
+        id: 'title1',
+        className : 'first',
+        style: {color :" crimson", fontSize : "3rem"} 
+    },"Heading1");
+    
+    let heading2 = React.createElement("h2", {
+        id: 'title2',
+        className : 'second',
+        //style: {color : " cornflowerblue", fontSize : "2rem"} 
+       style : heading2style
+    },"Heading2");
+    const showHeading2 = true;
+      const heading2style = {
+        color : showHeading2 ? "Green" : "purple"
+      };
+ 
+    const container = React.createElement("div", {
+        id: 'container'
+    }, [heading1 , 
+    showHeading2 ? heading2 : null ]);
+    const root = ReactDOM.createRoot(document.getElementById('root'));
+    root.render(container);
+    </script>
+  </body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>React</title>
+  </head>
+  <body>
+    <div id="root">
+      <!-- <div id="container">
+        <h1>Heading1</h1>
+        <h2>Heading2</h2>
+      </div> -->
+    </div>
+    
+    </div>
+  
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
+    <script>
+     const heading1 = React.createElement("h1",{
+        id: "title1",
+        className : "first",
+        style:{ color : "cornflowerblue" , fontSize : "2.5rem"}
+     }, "Heading1");
+     const handelClick = ()=>{
+        console.log("Handle2 Clicked!");
+     };
+     const heading2 = React.createElement("h2",{
+        id: "title2",
+        className : "second",
+        onClick: handelClick,
+        style : { color : "crimson",  fontSize : "2rem"}
+     }, "Heading2");
+     const container = React.createElement('div', {
+        id: 'container'
+      }, [heading1, heading2]);
+      
+      const root = ReactDOM.createRoot(document.getElementById("root"));
+      root.render(container);
+    </script>
+  </body>
+</html>
