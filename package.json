@@ -1,0 +1,28 @@
+{
+  "name": "reactjs",
+  "version": "1.0.0",
+  "description": "this is a react course",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Maroof-Sofi/ReactJs.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Maroof-Sofi/ReactJs/issues"
+  },
+  "homepage": "https://github.com/Maroof-Sofi/ReactJs#readme",
+  "devDependencies": {
+    "parcel": "^2.9.1",
+    "process": "^0.11.10"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
