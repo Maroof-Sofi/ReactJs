@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 
 const Heading = ()=>{
-    return <div>HIii</div>;
+    return <div>Hello world</div>;
 }
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
